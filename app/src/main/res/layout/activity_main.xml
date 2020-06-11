@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#026673"
+
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/mBtn_Profilepic_Register"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="120dp"
+        android:background="@drawable/rounded_profile_picture"
+        android:text="Profile Photo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.563"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/mCircleImageView_Register"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:civ_border_width="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/mBtn_Profilepic_Register"
+        app:layout_constraintEnd_toEndOf="@+id/mBtn_Profilepic_Register"
+        app:layout_constraintStart_toStartOf="@+id/mBtn_Profilepic_Register"
+        app:layout_constraintTop_toTopOf="@+id/mBtn_Profilepic_Register" />
+
+    <EditText
+        android:id="@+id/mEdtName_Register"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/rounded_ui_register_login"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/mBtn_Profilepic_Register"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="@+id/mBtn_Profilepic_Register"
+        app:layout_constraintTop_toBottomOf="@+id/mBtn_Profilepic_Register"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/mEdtEmail_Register"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/rounded_ui_register_login"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/mEdtName_Register"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/mEdtName_Register"
+        app:layout_constraintTop_toBottomOf="@+id/mEdtName_Register"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/mEdtPassword_Register"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/rounded_ui_register_login"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/mEdtEmail_Register"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/mEdtEmail_Register"
+        app:layout_constraintTop_toBottomOf="@+id/mEdtEmail_Register"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/mBtnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/rounded_button"
+        android:paddingLeft="10dp"
+        android:text="Register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/mEdtPassword_Register"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/mEdtPassword_Register"
+        app:layout_constraintTop_toBottomOf="@+id/mEdtPassword_Register"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/mTxtLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="32dp"
+        android:text="Have an account?Login..."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/mBtnRegister"
+        app:layout_constraintStart_toStartOf="@+id/mBtnRegister"
+        app:layout_constraintTop_toBottomOf="@+id/mBtnRegister"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
